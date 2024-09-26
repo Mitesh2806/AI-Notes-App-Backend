@@ -11,7 +11,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 origins = [
-    "https://ai-notes-calculator.netlify.app",
+    "https://ai-notes-calculator.netlify.app/",
 ]
 
 app.add_middleware(
