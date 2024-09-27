@@ -10,9 +10,7 @@ async def lifespan(app: FastAPI):
     yield
 
 app = FastAPI(lifespan=lifespan)
-origins = [
-    "https://ai-notes-calculator.netlify.app/",
-]
+
 
 app.add_middleware(
     CORSMiddleware,
